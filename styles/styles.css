@@ -50,11 +50,6 @@ background-color: var(--background);
 letter-spacing: 0.02em;
 }
 
-.head-container {
-    width: 1440px;
-    margin: 0 auto;
-}
-
 .conteiner{
     max-width: 1158px;
     margin: 0 auto;
@@ -73,7 +68,6 @@ letter-spacing: 0.02em;
 .section{
     margin: 0 auto;
     padding: 120px 0 120px 0;
-    width: 1440px;
 }
 
 .list {
@@ -89,7 +83,7 @@ letter-spacing: 0.02em;
 .head-nav {
     border-bottom: 1px solid var(--footertext);
     margin: auto;
-
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .head-logo {
@@ -163,6 +157,7 @@ display: block;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    width: 1440px;
 }
 
 .business-title {
@@ -527,8 +522,9 @@ font-weight: 500;
     padding-top: 32px;
 }
 
-.apps-post:hover .apps-description,
-.apps-post:focus .apps-description{
+.apps-link:hover .apps-description,
+.apps-link:focus .apps-description{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-color: var(--lightbackgroudcolor);
+    outline: transparent;
 }
