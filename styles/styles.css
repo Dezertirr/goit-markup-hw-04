@@ -9,7 +9,7 @@
     --customers-bg:#8E8F99;
     --customers-svg:#AFB1B8;
     --footer-focus:#31D0AA;
-    --footer-bg-link:#0000001A;
+    --footer-bg-link:#ffffff1A;
 }
 
 ul{
@@ -58,9 +58,7 @@ letter-spacing: 0.02em;
 .conteiner{
     max-width: 1158px;
     margin: 0 auto;
-    box-sizing: border-box;
-
-    
+    box-sizing: border-box; 
 }
 
 .header-container {
@@ -75,6 +73,7 @@ letter-spacing: 0.02em;
 .section{
     margin: 0 auto;
     padding: 120px 0 120px 0;
+    width: 1440px;
 }
 
 .list {
@@ -216,19 +215,18 @@ line-height: 24px;
 }
 
 .futures-svg {
-    margin: 24px 100px;
 }
 
 .futures-bg {
     background-color: var(--lightbackgroudcolor);
     border-radius: 4px;
+    padding: 24px 100px;
 }
 
 .futures-title{
     font-size: 20px;
     line-height: 1.2;
     font-weight: 500;
-    justify-content: center;
     gap:24px;   
     margin-bottom: 8px;
     margin-top: 8px;
@@ -364,26 +362,29 @@ gap:24px;
 
 .customers-item {
     display: block;
-border:1px solid var(--customers-bg);
-border-radius: 4px;
-}
-
-.customers-item:hover, .customers-item:focus{
-    border-color: var(--hoverlink);
 }
 
 .customers-link {
     display: flex;
+    border:1px solid var(--customers-bg);
+border-radius: 4px;
+outline: transparent;
 }
 
 .customers-svg {
     margin: 16px 32px;
     fill: var(--customers-svg);
+    
 }
 
 .customers-link:hover .customers-svg,
 .customers-link:focus .customers-svg {
     fill: var(--hoverlink);
+}
+
+.customers-link:focus, .customers-link:hover {
+    border-color:var(--hoverlink);
+    outline: transparent;
 }
 
 .footer {
@@ -526,6 +527,8 @@ font-weight: 500;
     padding-top: 32px;
 }
 
-.apps-description:hover, .apps-description:focus {
+.apps-post:hover .apps-description,
+.apps-post:focus .apps-description{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-color: var(--lightbackgroudcolor);
 }
