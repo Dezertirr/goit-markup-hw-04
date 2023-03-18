@@ -417,7 +417,7 @@ outline: transparent;
 .footer-text {
     color: var(--footertext);
     max-width: 262px;
-    padding-top: 18px; 
+    margin-top: 18px;
 }
 .footer-svg-list{
     display: flex;
