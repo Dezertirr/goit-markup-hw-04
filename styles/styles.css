@@ -528,3 +528,7 @@ font-weight: 500;
     border-color: var(--lightbackgroudcolor);
     outline: transparent;
 }
+
+.apps-link:hover, .apps-link:focus {
+    outline: transparent;
+}
