@@ -54,6 +54,7 @@ letter-spacing: 0.02em;
     max-width: 1158px;
     margin: 0 auto;
     box-sizing: border-box; 
+    padding: 0 15px 0 15px;
 }
 
 .header-container {
@@ -158,6 +159,7 @@ display: block;
     background-size: cover;
     background-position: center;
     width: 1440px;
+    background-color: var(--maincolor);
 }
 
 .business-title {
